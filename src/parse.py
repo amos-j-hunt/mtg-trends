@@ -27,7 +27,7 @@ def load_json(path):
 
 def flatten_cards(data):
     all_cards = []
-    allowed_types = ['core','expansion','draft_innovation']
+    allowed_types = ['core','expansion','draft_innovation','masters','commander']
     for set_code, set_data in data['data'].items():
         set_name = set_data['name']
         release_date = set_data['releaseDate']
